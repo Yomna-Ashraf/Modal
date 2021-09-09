@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      html {
+        --scrollbarBG: #CFD8DC;
+        --thumbBG: #90A4AE;
+      }
+      body::-webkit-scrollbar {
+        width: 15px;
+      }
+    
+      body {
+        scrollbar-width: thin;
+        scrollbar-color: rgb(7, 42, 65) var(--scrollbarBG);
+      }
+      body::-webkit-scrollbar-track {
+        background:#CFD8DC ;
+      }
+      body::-webkit-scrollbar-thumb {
+        background-color: rgb(7, 42, 65) ;
+        border-radius: 20px;
+        border: 3px solid var(--scrollbarBG);
+
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <!-- hero -->
+    <header class="hero">
+      <div class="banner">
+        <h1>Modal Project</h1>
+        <button class="btn modal-btn">
+          open modal
+        </button>
+      </div>
+    </header>
+    <!-- modal -->
+    <div class="modal-overlay">
+      <div class="modal-container">
+        <h3>Modal Content</h3>
+        <button class="close-btn"><i class="fas fa-times"></i></button>
+      </div>
+    </div>  
+    <!--------------------------QUESTIONS------------------------------>
+    <div class="question-bar">
+      <h2>Questions</h2>
+      <div class="q-container">
+        <div class="questions">
+          <div class="part">
+            <h4>Do You Accept All Major Credit Cards?</h4>
+            <button type="button" class="question-btn">
+              <span class="plus-icon">
+                <i class="far fa-plus-square"></i>
+              </span>
+              <span class="minus-icon">
+                <i class="far fa-minus-square"></i>
+              </span>
+            </button>            
+          </div>
+          <p class="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est dolore illo dolores quia nemo doloribus quaerat, magni numquam repellat reprehenderit.
+
+          </p>
+        </div>
+          <div class="questions">
+            <div class="part">
+              <h4>Do You Suppport Local Farmers?
+
+              </h4>
+              <button type="button" class="question-btn">
+                <span class="plus-icon">
+                  <i class="far fa-plus-square"></i>
+                </span>
+                <span class="minus-icon">
+                  <i class="far fa-minus-square"></i>
+                </span>
+              </button>            
+            </div>
+            <p class="answer">yomna ipsum dolor sit amet, consectetur adipisicing elit. Est dolore illo dolores quia nemo doloribus quaerat, magni numquam repellat reprehenderit.
+  
+            </p>
+          </div>
+            <div class="questions">
+              <div class="part">
+                <h4>Do You Use Organic Ingredients?
+
+                </h4>
+                <button type="button" class="question-btn">
+                  <span class="plus-icon">
+                    <i class="far fa-plus-square"></i>
+                  </span>
+                  <span class="minus-icon">
+                    <i class="far fa-minus-square "></i>
+                  </span>
+                </button>            
+              </div>
+              <p class="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est dolore illo dolores quia nemo doloribus quaerat, magni numquam repellat reprehenderit.
+  
+              </p>
+            </div>
+        </div>
+      </div>
+    </div>
+<!------------Restaurant menu-------->
+    <div class="restaurant">
+      <h2 class="line-margin">Restaurant Menu Filter</h2>
+      <div class='line'></div>
+      <div class="buttons">
+        <button class="meal-btn" id = "all">All</button>
+        <button class="meal-btn" id = "breakfast">Break Fast</button>
+        <button class="meal-btn" id = "lunch">Lunch</button>
+        <button class="meal-btn" id = "dinner">Dinner</button>
+        <button class="meal-btn" id = "shakes">Drinks</button>
+     
+      </div>
+      <div class="menu" id="menu">
+
+          <div class="meal">
+            <img src="https://media.istockphoto.com/photos/breakfast-picture-id494292144?k=6&m=494292144&s=612x612&w=0&h=MuOadzFa2ZE2bxl6mh_IxFYIQ7FdFcjZN3BcIjIYrbs=" class="meal-img">
+            <div class="info">
+              <div class="name-price">
+                <p class="meal-title">PanCakes</p>
+                <p class="price">32.50$</p>
+              </div>
+              <p class="description">vaporware iPhone mumblecore selvage raw denim slow-carb leggings gochujang helvetica man braid jianbing. Marfa thundercats</p>
+            </div>
+           </div> 
+          <div class="meal">
+            <img src="https://media.istockphoto.com/photos/breakfast-picture-id494292144?k=6&m=494292144&s=612x612&w=0&h=MuOadzFa2ZE2bxl6mh_IxFYIQ7FdFcjZN3BcIjIYrbs=" class="meal-img">
+            <div class="info">
+              <div class="name-price">
+                <p class="meal-title">PanCakes</p>
+                <p class="price">32.50$</p>
+              </div>
+              <p class="description">vaporware iPhone mumblecore selvage raw denim slow-carb leggings gochujang helvetica man braid jianbing. Marfa thundercats</p>
+            </div>
+          </div>
+
+          <div class="meal">
+            <img src="https://media.istockphoto.com/photos/breakfast-picture-id494292144?k=6&m=494292144&s=612x612&w=0&h=MuOadzFa2ZE2bxl6mh_IxFYIQ7FdFcjZN3BcIjIYrbs=" class="meal-img">
+            <div class="info">
+              <div class="name-price">
+                <p class="meal-title">PanCakes</p>
+                <p class="price">32.50$</p>
+              </div>
+              <p class="description">vaporware iPhone mumblecore selvage raw denim slow-carb leggings gochujang helvetica man braid jianbing. Marfa thundercats</p>
+            </div>
+          </div>
+          <div class="meal">
+            <img src="https://media.istockphoto.com/photos/breakfast-picture-id494292144?k=6&m=494292144&s=612x612&w=0&h=MuOadzFa2ZE2bxl6mh_IxFYIQ7FdFcjZN3BcIjIYrbs=" class="meal-img">
+            <div class="info">
+              <div class="name-price">
+                <p class="meal-title">PanCakes</p>
+                <p class="price">32.50$</p>
+              </div>
+              <p class="description">vaporware iPhone mumblecore selvage raw denim slow-carb leggings gochujang helvetica man braid jianbing. Marfa thundercats</p>
+          </div>
+      </div>
+    </div>
+    <!-- javascript -->
+    <script src="app.js"></script>
+  </body>
+</html>
